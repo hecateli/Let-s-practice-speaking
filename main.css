@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+ }
+
+.clearfix::before,.clearfix:after{
+    content: "";
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+}
+
+:root{
+    --primary: #66a5ad;
+    --ocean: #07575b;
+    --deep-aqua: #003b46;
+	--light: #EEE;
+	--grey: #888;
+	--dark: #313154;
+	--danger: #ff5b57;
+    --white-green: rgb(201, 218, 191);
+    --dark-green: rgb(95, 111, 101);
+    --dark-blue: rgb(0, 61, 116);
+    --sky-blue: rgb(139, 163, 199);
+    --white-blue: rgb(212, 229, 239);
+}
+
+body{
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn{
+    font-family: inherit;
+    cursor: pointer;
+    outline: 0;
+    font-size: 1.05rem;
+}
+
+.text{
+    opacity: 0.8;
+}
+
+.title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.get-questions{
+    height: 145px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-bottom: 0;
+    background: #fff;
+    text-align: center;
+}
+
+#get-questions-btn, #clear{
+    width: 245px;
+	height: 35px;
+	text-decoration: none;
+	color: #EEE;
+	background-color: #3F4F4F;
+	border-radius: 2rem;
+}
+
+.question-list{
+    height: 200px;
+    width: 700px;
+    text-align: center
+}
+
+.question-list .list {
+	margin: 1rem 0;
+}
+
+.question-list .question-item {
+    width: 700px;
+	height: 35px;
+	align-items: center;
+    text-align: center;
+	background-color: #92A39D;
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.question-list .question-item:hover{
+    background-color:#5A6A6A;
+    color: #fff;
+}
+
+#clear{
+    visibility: hidden;
+}
+
+.question-details{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    color: #fff;
+    background: var(--deep-aqua);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    width: 600px;
+    /* height: 250px; */
+    visibility: hidden;
+    padding: 2rem 0;
+}
+
+#detail-close-btn{
+    position: absolute;
+    left: 225px;
+    bottom: 10%;
+    width: 150px;
+	height: 30px;
+	text-decoration: none;
+	color: #003b46;
+	background-color: #EEE;
+	border-radius: 2rem;
+}
+
+.question{
+    color: #EEE;
+    text-align: center;
+    font-size: 1.0rem;
+    font-family: sans-serif;
+    margin-bottom: 35px;
+}
+
